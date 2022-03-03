@@ -2,13 +2,14 @@ package com.mjvschool.atracao.model.contrato;
 
 import java.util.Date;
 
-import com.mjvschool.atracao.model.cadastro.Cadastro;
+
+import com.mjvschool.atracao.model.cadastro.Pessoa;
 import com.mjvschool.atracao.model.cadastro.Servico;
 
 public class Contrato {
 	
 	private long numeroProtocolo;
-	private Cadastro cadastro;
+	private Pessoa cadastro;
 	private Date dataHora;
 	private Servico servico;
 	public Servico getServico() {
@@ -27,10 +28,10 @@ public class Contrato {
 	public void setNumeroProtocolo(long numeroProtocolo) {
 		this.numeroProtocolo = numeroProtocolo;
 	}
-	public Cadastro getCadastro() {
+	public Pessoa getCadastro() {
 		return cadastro;
 	}
-	public void setCadastro(Cadastro cadastro) {
+	public void setCadastro(Pessoa cadastro) {
 		this.cadastro = cadastro;
 	}
 
