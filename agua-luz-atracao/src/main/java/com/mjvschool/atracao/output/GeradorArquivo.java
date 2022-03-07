@@ -21,13 +21,14 @@ public class GeradorArquivo {
 		
 		System.out.println(conteudo.toString());
 		
-		File output = new File("/home/mjv_java_school/agua_luz_output");
+		File output = new File("/home/miguel/mjv_java_school/agua_luz_output/");
 		
 		if(!output.exists()) {
 			output.mkdirs();
+			//output.createNewFile();
 		}
 		
-		Path path = Paths.get("/home/mjv_java_school/agua_luz_output/agua_luz_contratos.csv");
+		Path path = Paths.get("/home/miguel/mjv_java_school/agua_luz_output/agua_luz_contratos.csv");
 
 		try {
 			Files.write(path, conteudo.toString().getBytes(StandardCharsets.UTF_8));
@@ -49,13 +50,13 @@ public class GeradorArquivo {
 		
 		System.out.println(conteudo.toString());
 		
-		File output = new File("/home/mjv_java_school/agua_luz_output");
+		File output = new File("/home/miguel/mjv_java_school/agua_luz_output");
 		
 		if(!output.exists()) {
 			output.mkdirs();
 		}
 		
-		Path path = Paths.get("/home/mjv_java_school/agua_luz_output/agua_luz_contratos.txt");
+		Path path = Paths.get("/home/miguel/mjv_java_school/agua_luz_output/agua_luz_contratos.txt");
 
 		try {
 			Files.write(path, conteudo.toString().getBytes(StandardCharsets.UTF_8));
