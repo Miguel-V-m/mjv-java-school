@@ -8,7 +8,7 @@ import com.mjvschool.atracao.model.cadastro.Pais;
 import com.mjvschool.atracao.model.cadastro.Pessoa;
 import com.mjvschool.atracao.model.cadastro.Servico;
 import com.mjvschool.atracao.model.contrato.Contrato;
-import com.mjvschool.atracao.output.GeradorArquivoCsv;
+import com.mjvschool.atracao.output.GeradorArquivo;
 import com.mjvschool.atracao.repository.ContratoRepository;
 
 public class AguaLuzAtracaoApp {
@@ -19,8 +19,10 @@ public class AguaLuzAtracaoApp {
 	}
 	private static void faseGeracaoArquivo() {
 		List<Contrato> contratos = contratoRepositorio.listarTodos();
-		GeradorArquivoCsv gerador = new GeradorArquivoCsv();
-		gerador.gerarArquivo(contratos);
+		GeradorArquivo gerador = new GeradorArquivo();
+		gerador.gerarArquivoCsv(contratos);
+		gerador.gerarArquivoTxt(contratos);
+		
 	}
 	private static void faseAtracao() {
 		Contrato contrato1 = new Contrato();
