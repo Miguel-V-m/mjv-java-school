@@ -31,7 +31,7 @@ public class AguaLuzAtracaoApp {
 				
 		Pessoa pessoa = new Pessoa();
 		pessoa.setCpf("123213");
-		pessoa.setNome("Gleyson Sampaio");
+		pessoa.setNome(" Gleyson Sampaio de Oliveira");
 		pessoa.setRg("89789");
 		pessoa.setPais(Pais.BRASIL);
 		
@@ -42,7 +42,7 @@ public class AguaLuzAtracaoApp {
 		endereco.setCep("27.310-657");
 		endereco.setCidade("São Paulo");
 		endereco.setEstado("SP");
-		endereco.setLogradouro("Rua das Marias");
+		endereco.setLogradouro("Rua das Cajazeiras 26");
 		endereco.setNumero("243");
 		pessoa.setEndereco(endereco);
 		contrato1.setCadastro(pessoa);
@@ -53,18 +53,19 @@ public class AguaLuzAtracaoApp {
 		Contrato contrato2 = new Contrato();
 		contrato2.setNumeroProtocolo(78678);
 		contrato2.setServico(Servico.AGUA);
-				
+		
+		
 		Pessoa pessoa2 = new Pessoa();
-		pessoa2.setCpf("895256548");
-		pessoa2.setNome(" Miguel");
-		pessoa2.setRg("892697");
-		pessoa2.setPais(Pais.PERU);
+		pessoa2.setCpf("11094986089");
+		pessoa2.setNome("Raimundo Nonato Loureiro Castelo Branco");
+		pessoa2.setRg("98908");
+		pessoa2.setPais(Pais.ESTADOS_UNIDOS);
 		
 		pessoa2.setCelular("971871465");
 		
 		Endereco endereco2 = new Endereco();
 		endereco2.setBairro("Sanato Antonio");
-		endereco2.setCep("27.310-657");
+		endereco2.setCep("27310657");
 		endereco2.setCidade("São Paulo");
 		endereco2.setEstado("SP");
 		endereco2.setLogradouro("Rua das Marias");

@@ -25,7 +25,7 @@ public class GeradorArquivo {
 		
 		if(!output.exists()) {
 			output.mkdirs();
-			//output.createNewFile();
+			
 		}
 		
 		Path path = Paths.get("/home/miguel/mjv_java_school/agua_luz_output/agua_luz_contratos.csv");

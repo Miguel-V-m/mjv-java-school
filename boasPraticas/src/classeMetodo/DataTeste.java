@@ -4,15 +4,12 @@ public class DataTeste {
 	public static void main(String[] args) {
 		
 		Data d1 = new Data();
-		d1.dia = 4;
-		d1.mes = 5;
-		d1.ano = 2022;
+		//d1.dia = 4;
+		//d1.mes = 5;
+		//d1.ano = 2022;
 				
-		var d2 = new Data();
-		d2.dia = 31;
-		d2.mes = 12;
-		d2.ano = 2022;
-		
+		var d2 = new Data(31,12,2020);
+				
 		String dataFormatada = d1.obterDataFormatada();
 		
 		System.out.println(dataFormatada);
