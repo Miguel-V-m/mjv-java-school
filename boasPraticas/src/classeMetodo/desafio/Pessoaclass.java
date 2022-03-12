@@ -1,11 +1,11 @@
 package classeMetodo.desafio;
 
-public class Pessoa {
+public class Pessoaclass {
 	
 	String nome;
 	double peso;
 	
-	Pessoa(String nome,double peso){
+	Pessoaclass(String nome,double peso){
 		this.nome = nome;
 		this.peso = peso;
 	}
