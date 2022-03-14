@@ -2,9 +2,11 @@ package com.mjv.jdbc.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import com.mjv.jdbc.model.Aluno;
 import com.mjv.jdbc.util.FabricaConexao;
+
 
 public class AlunoRepository {
 	//padrao CRUD
@@ -33,10 +35,40 @@ public class AlunoRepository {
 			procedimentoSql.execute();
 
 			System.out.println("registro inserido com sucesso");
-			//procedimentoSql.close();
+			procedimentoSql.close(); //livara a conexão
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
+	public void listar() {
+		try {
+			Connection connection = FabricaConexao.getConexao();
+
+			String sql = "SELECT * FROM tab_aluno ";
+			
+			PreparedStatement procedimentoSql = connection.prepareStatement(sql);
+			ResultSet result = procedimentoSql.executeQuery(sql);
+			while(result.next()){
+				int id = result.getInt("id");
+				String nome = result.getString("nome");
+				double altura = result.getDouble("altura");
+				String sexo = result.getString("sexo");
+				boolean ativo = result.getBoolean("ativo");
+				System.out.println(id + ";" + nome + "," + altura + ", " + sexo + ", " + ativo);
+
+			}
+
+		System.out.println("Select realizado com sucesso");
+		procedimentoSql.close();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
 }
+
+
+

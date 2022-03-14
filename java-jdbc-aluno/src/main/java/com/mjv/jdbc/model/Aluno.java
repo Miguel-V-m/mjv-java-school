@@ -1,6 +1,7 @@
 package com.mjv.jdbc.model;
 
 public class Aluno {
+	
 	private String nome;
 	private String sexo;
 	private Double altura;
@@ -29,5 +30,6 @@ public class Aluno {
 	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
+	
 	
 }

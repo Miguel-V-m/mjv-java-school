@@ -45,16 +45,6 @@ INSERT INTO CADASTRO
   
   
 # criando uma nova Tabela
-CREATE TABLE IF NOT EXISTS public.tab_aluno (
-    id             INT NOT NULL AUTO_INCREMENT,
-    nome           varchar(50) NOT NULL,
-    altura         numeric(3, 2) NULL,
-    sexo           char(1)  NOT NULL,
-    ativo          bool NULL,
-    cd_cidade      numeric(8) NULL,
-    CONSTRAINT tab_aluno_pk PRIMARY KEY (id)
-);
-
 CREATE TABLE IF NOT EXISTS tab_aluno (
     id             INT NOT NULL AUTO_INCREMENT,
     nome           varchar(50) NOT NULL,
@@ -66,4 +56,7 @@ CREATE TABLE IF NOT EXISTS tab_aluno (
 );
 
 select * from tab_aluno;
+
+
+
   
