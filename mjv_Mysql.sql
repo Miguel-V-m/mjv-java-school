@@ -1,8 +1,8 @@
 -- elimina banco de dados drop database mjv_school_db;
-CREATE DATABASE mjv_school_db;
+CREATE DATABASE IF NOT EXISTS mjv_school_db;
 
 -- DDL  CRIACAO DA TABELA PARA CADASTRO
-CREATE TABLE CADASTRO 
+CREATE TABLE IF NOT EXISTS CADASTRO 
   ( 
      ID               INT NOT NULL AUTO_INCREMENT,
      CPF              INT NOT NULL, 
@@ -45,7 +45,7 @@ INSERT INTO CADASTRO
   
   
 # criando uma nova Tabela
-CREATE TABLE IF NOT EXISTS public_tab_aluno (
+CREATE TABLE IF NOT EXISTS public.tab_aluno (
     id             INT NOT NULL AUTO_INCREMENT,
     nome           varchar(50) NOT NULL,
     altura         numeric(3, 2) NULL,
@@ -55,6 +55,15 @@ CREATE TABLE IF NOT EXISTS public_tab_aluno (
     CONSTRAINT tab_aluno_pk PRIMARY KEY (id)
 );
 
+CREATE TABLE IF NOT EXISTS tab_aluno (
+    id             INT NOT NULL AUTO_INCREMENT,
+    nome           varchar(50) NOT NULL,
+    altura         numeric(3, 2) NULL,
+    sexo           char(1)  NOT NULL,
+    ativo          bool NULL,
+    cd_cidade      numeric(8) NULL,
+    CONSTRAINT tab_aluno_pk PRIMARY KEY (id)
+);
 
-
+select * from tab_aluno;
   

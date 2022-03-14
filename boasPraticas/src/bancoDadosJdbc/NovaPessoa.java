@@ -12,7 +12,7 @@ public class NovaPessoa {
 		System.out.print("Informe o nome: ");
 		String nome = entrada.nextLine();
 		
-		Connection conexao = FabricaConexao.getConexao();
+		Connection conexao = FaabricaConexao.getConexao();
 		
 		String sql = "INSERT INTO pessoas (nome) VALUES (?)";
 		PreparedStatement stmt = conexao.prepareStatement(sql);

@@ -17,7 +17,7 @@ public class EscolaApp {
 			AlunoRepository alunoRepository = new AlunoRepository();
 			alunoRepository.gravar(aloisio);
 			
-			FabricaConexao.fecharConexao();
+			//FabricaConexao.fecharConexao();
 			
 			
 		} catch (Exception e) {

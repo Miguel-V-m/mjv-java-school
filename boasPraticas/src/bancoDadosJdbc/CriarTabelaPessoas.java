@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class CriarTabelaPessoas {
 	public static void main(String[] args) throws SQLException {
 		
-		Connection conexao = FabricaConexao.getConexao();
+		Connection conexao = FaabricaConexao.getConexao();
 		
 		String sql = "CREATE TABLE IF NOT EXISTS pessoas ("
 				+ "codigo  INT AUTO_INCREMENT PRIMARY KEY,"

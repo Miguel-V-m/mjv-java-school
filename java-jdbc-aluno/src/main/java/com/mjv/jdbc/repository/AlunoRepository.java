@@ -33,7 +33,7 @@ public class AlunoRepository {
 			procedimentoSql.execute();
 
 			System.out.println("registro inserido com sucesso");
-			procedimentoSql.close();
+			//procedimentoSql.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

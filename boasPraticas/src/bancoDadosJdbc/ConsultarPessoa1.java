@@ -10,7 +10,7 @@ import java.util.List;
 public class ConsultarPessoa1 {
 	
 	public static void main(String[] args) throws SQLException {
-		Connection conexao = FabricaConexao.getConexao();
+		Connection conexao = FaabricaConexao.getConexao();
 		String sql = "SELECT * FROM pessoas";
 		
 		Statement stmt = conexao.createStatement();
