@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS tab_aluno (
     CONSTRAINT tab_aluno_pk PRIMARY KEY (id)
 );
 
-select * from tab_aluno;
+select * from musicas;
 
 
 

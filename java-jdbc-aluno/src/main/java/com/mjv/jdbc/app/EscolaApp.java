@@ -39,7 +39,7 @@ public class EscolaApp {
 			
 			alunoRepository.listar();
 			
-			//  FabricaConexao.fecharConexao();
+		   FabricaConexao.fecharConexao();
 			
 			
 		} catch (Exception e) {

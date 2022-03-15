@@ -55,7 +55,7 @@ public class AlunoRepository {
 				double altura = result.getDouble("altura");
 				String sexo = result.getString("sexo");
 				boolean ativo = result.getBoolean("ativo");
-				System.out.println(id + ";" + nome + "," + altura + ", " + sexo + ", " + ativo);
+				System.out.println(id + " ==> " + nome + " ==> " + altura + " ==> " + sexo + " ==> " + ativo);
 
 			}
 

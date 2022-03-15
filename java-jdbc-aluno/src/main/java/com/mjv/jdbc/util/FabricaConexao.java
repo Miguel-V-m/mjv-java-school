@@ -22,11 +22,11 @@ public class FabricaConexao {
 	public static Connection getConexao() {
 		return conexao;
 	}
-//	public static void fecharConexao() {
-//		try {
-//			conexao.close();
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//	}
+	public static void fecharConexao() {
+		try {
+			conexao.close();
+     	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+  }
 }
