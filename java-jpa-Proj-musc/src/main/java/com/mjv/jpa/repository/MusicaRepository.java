@@ -13,11 +13,15 @@ public class MusicaRepository {
 		EntityManagerFactory entityManagerFactory 
         = Persistence.createEntityManagerFactory("MUSICAS-PU");
 		em = entityManagerFactory.createEntityManager();
+		em.close(); // agrege de forma adicional se não funciona comenta
+		entityManagerFactory.close();//agresgue de forma adicional si no funciona comenta 
 	} 
+	
 	 public void save(Musica musica){
 	        em.getTransaction().begin();
 	        em.persist(musica);
 	        em.getTransaction().commit();
 	    }
+	 
 
 }
