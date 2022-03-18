@@ -20,17 +20,6 @@ public class Music {
     private String genero;
     private boolean internacional;
     
-    public Music() {
-    	
-    }
-    public Music(String nome, String genero, boolean internacional) {
-		super();
-		this.nome = nome;
-		this.genero = genero;
-		this.internacional = internacional;
-	}
-
-
 	public int getId() {
 		return id;
 	}
