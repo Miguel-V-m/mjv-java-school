@@ -48,12 +48,15 @@ public class DAO<E> {
 		em.persist(entidade);
 		return this.abrirT().incluirT(entidade).fecharT();
 	}
+	public E opterPorID(Object id) {
+		return em.find(classe, id);
+	}
+	
 	// metodo para obter todos
 	public List<E> obterTodos(){
 		return this.obterTodos();
 		
 	}
-	
 	public List<E> obterTodos(int qtde, int deslocamento){
 		if(classe == null) {
 			throw new UnsupportedOperationException("classe nula.");

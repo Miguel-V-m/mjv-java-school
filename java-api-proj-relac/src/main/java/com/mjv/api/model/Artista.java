@@ -17,6 +17,14 @@ public class Artista {
 	@Column(name = "artista",length=50)
     private String artista;
 	
+    public Artista() {
+    }
+	
+	public Artista(String artista) {
+	super();
+	this.artista = artista;
+}
+
 	public int getId() {
 		return id;
 	}

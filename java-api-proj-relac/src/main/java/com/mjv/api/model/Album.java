@@ -22,6 +22,14 @@ public class Album {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	public Album() {
+		
+	}
+	public Album(String album) {
+		super();
+		this.album = album;
+	}
 	public String getAlbum() {
 		return album;
 	}
