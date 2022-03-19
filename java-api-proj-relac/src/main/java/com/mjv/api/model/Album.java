@@ -16,19 +16,20 @@ public class Album {
     private int id;
 	@Column(name = "album",length=50)
     private String album;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	
-	public Album() {
+    public Album() {
 		
 	}
 	public Album(String album) {
 		super();
 		this.album = album;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getAlbum() {
 		return album;

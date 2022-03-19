@@ -11,20 +11,20 @@ public class PlaylistrepApp {
 		
 		DAO<Music> dao = new DAO<>(Music.class);
 		Music music = new Music(); 
-		music.setNome("Procura");
+		music.setNome("La Verdad");
 	    music.setGenero("Salsa");
 	    music.setInternacional(true);
-		// dao.abrirT().incluirT(music).fecharT().fechar();
+		//dao.abrirT().incluirT(music).fecharT().fechar();
 	    //dao.incluirAtomico(music).fechar();
 	    
 	    DAO<Artista> dao2 = new DAO<>(Artista.class);
 	    Artista artista = new Artista();
-	    artista.setArtista("Chichi Peralta");
+	    artista.setArtista("Héctor Lavoe");
 	    //dao2.incluirAtomico(artista).fechar();
 	    
 	    DAO<Album> dao3 = new DAO<>(Album.class);
 	    Album album = new Album();
-	    album.setAlbum("Pa' Otro La 'O");
+	    album.setAlbum("Comedia");
 	    //dao3.incluirAtomico(album).fechar();
 	}
 
